@@ -1,2 +1,3 @@
 FROM python:3
-RUN pip install -e imagehash/ImageHash-4.0-py2.py3-none-any.whl
+ADD imagehash/ImageHash-4.0-py2.py3-none-any.whl /
+RUN pip install -e ImageHash-4.0-py2.py3-none-any.whl
