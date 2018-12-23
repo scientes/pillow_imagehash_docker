@@ -1,5 +1,5 @@
 FROM python:3
 RUN git clone https://github.com/scientes/imagehash
-RUN python Imagehash/setup.py sdist bsdist_wheel
-RUN pip install -e Imagehash/dist/ImageHash-4.0-py2.py3-none-any.whl
-RUN rm -r Imagehash
+RUN python imagehash/setup.py sdist bsdist_wheel
+RUN pip install -e imagehash/dist/ImageHash-4.0-py2.py3-none-any.whl
+RUN rm -r imagehash
