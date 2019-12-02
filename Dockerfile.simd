@@ -1,2 +1,2 @@
-FROM python:3
+FROM python:3-slim
 RUN git clone https://github.com/scientes/imagehash && python imagehash/setup.py sdist bsdist_wheel && pip install -e imagehash/dist/ImageHash-4.0-py2.py3-none-any.whl && rm -r imagehash
